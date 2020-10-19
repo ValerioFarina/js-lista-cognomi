@@ -23,6 +23,18 @@ if (!lastNames.includes(userLastName)) {
 // ordino l'array lastNames secondo l'ordine alfabetico
 lastNames.sort();
 
+/* VERSIONE ALTERNATIVA: simulo il comportamento della funzione sort usando il ciclo for
+for (var i=0; i<lastNames.length; i++) {
+    for (var j=0; j<=i; j++) {
+        if (lastNames[i]<lastNames[j]) {
+            var lower = lastNames[i];
+            var greater = lastNames[j];
+            lastNames[j] = lower;
+            lastNames[i] = greater;
+        }
+    }
+} */
+
 // creo una variabile in cui salvo la posizione del cognome dell'utente all'interno dell'array lastNames (ordinato alfabeticamente)
 var indexOfUserLastName = lastNames.indexOf(userLastName);
 
