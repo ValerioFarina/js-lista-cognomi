@@ -15,8 +15,10 @@ do {
 }
 while (userLastName == '');
 
-// inserisco il congome dell'utente nell'array lastNames
-lastNames.push(userLastName);
+// inserisco il congome dell'utente nell'array lastNames (ma solo se non è già presente nell'array)
+if (!lastNames.includes(userLastName)) {
+    lastNames.push(userLastName);
+}
 
 // ordino l'array lastNames secondo l'ordine alfabetico
 lastNames.sort();
