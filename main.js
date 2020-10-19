@@ -16,4 +16,8 @@ lastNames.push(userLastName);
 // ordino l'array lastNames secondo l'ordine alfabetico
 lastNames.sort();
 
-console.log(lastNames);
+// creo una variabile in cui salvo la posizione del cognome dell'utente all'interno dell'array lastNames (ordinato alfabeticamente)
+var indexOfUserLastName = lastNames.indexOf(userLastName);
+
+// comunico all'utente la posizione in cui si trova il suo cognome all'interno dell'array lastNames (ordinato alfabeticamente)
+console.log('Il tuo cognome si trova in posizione ' + indexOfUserLastName);
