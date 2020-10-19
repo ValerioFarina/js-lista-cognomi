@@ -35,6 +35,9 @@ for (var i=0; i<lastNames.length; i++) {
     }
 } */
 
+// stampo l'array lastNames (ordinato alfabeticamente)
+console.log(lastNames);
+
 // creo una variabile in cui salvo la posizione del cognome dell'utente all'interno dell'array lastNames (ordinato alfabeticamente)
 var indexOfUserLastName = lastNames.indexOf(userLastName);
 
