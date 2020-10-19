@@ -26,5 +26,14 @@ lastNames.sort();
 // creo una variabile in cui salvo la posizione del cognome dell'utente all'interno dell'array lastNames (ordinato alfabeticamente)
 var indexOfUserLastName = lastNames.indexOf(userLastName);
 
+/* VERSIONE ALTERNATIVA: simulo il comportamento della funzione indexOf usando il ciclo for
+
+var indexOfUserLastName;
+for (var i=0; indexOfUserLastName==undefined; i++) {
+    if (lastNames[i]==userLastName) {
+        indexOfUserLastName = i;
+    }
+} */
+
 // comunico all'utente la posizione in cui si trova il suo cognome all'interno dell'array lastNames (ordinato alfabeticamente)
 console.log('Il tuo cognome si trova in posizione ' + indexOfUserLastName);
