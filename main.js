@@ -8,7 +8,7 @@
 var lastNames = ['rossi', 'colombo', 'ferrari', 'costa', 'fontana', 'santoro', 'bernardi']
 
 // chiedo all'utente di inserire il suo cognome (e lo salvo in una variabile)
-var userLastName = prompt('Inserisci il tuo cognome');
+var userLastName = prompt('Inserisci il tuo cognome').toLowerCase();
 
 // inserisco il congome dell'utente nell'array lastNames
 lastNames.push(userLastName);
