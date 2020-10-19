@@ -9,8 +9,9 @@ var lastNames = ['rossi', 'colombo', 'ferrari', 'costa', 'fontana', 'santoro', '
 
 // chiedo all'utente di inserire il suo cognome, trasformo l'input inserito dall'utente in lower case e lo salvo in una variabile
 // continuo a fare questo fintanto che l'input inserito dall'utente è una stringa vuota
+var userLastName
 do {
-    var userLastName = prompt('Inserisci il tuo cognome').toLowerCase();
+    userLastName = prompt('Inserisci il tuo cognome').toLowerCase();
 }
 while (userLastName == '');
 
